@@ -41,10 +41,11 @@ public class ArrayStack<E> implements Stack<E> {
 
     @Override
     public E pop() {
-        if (isEmpty( )) return null;
+        if (isEmpty()) return null;
         E answer = data[courser];
         data[courser] = null;
         courser--;
         return answer;
     }
+
 }

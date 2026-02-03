@@ -23,7 +23,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     }
 
     @Override
-    public E fist() {
+    public E first() {
         if (isEmpty()) return null;
         return head.getElement();
     }
@@ -37,7 +37,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     @Override
     public void addFirst(E e) {
         head = new Node<>(e, head);
-        if (size == 0) tail = head;
+        if (this.isEmpty()) tail = head;
         size++;
     }
 

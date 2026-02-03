@@ -6,7 +6,7 @@ public interface LinkedList<E> {
 
     boolean isEmpty();
 
-    E fist();
+    E first();
 
     E last();
 
